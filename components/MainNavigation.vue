@@ -32,7 +32,6 @@
                     v-list-tile-action
                       v-icon(fa light) facebook
                     v-list-tile-title Facebook
-          v-spacer
           v-list-tile-action
             v-btn(icon light v-on:click.native.stop="mini = !mini")
               v-icon chevron_left
