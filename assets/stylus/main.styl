@@ -7,38 +7,3 @@
 @import './generic/_transitions'
 @import './components/_section-text'
 @import './components/_section-header'
-
-// see https://github.com/vuetifyjs/vuetify/issues/616 for fixes submitted
-.list
-  &--dense
-    .subheader
-      font-size: 13px //on non-dense this goes from 16 to 14px. knock it down from 14 to 13 for dense? or keep it at 13
-      height 40px
-    .list--group
-      .subheader
-        height 32px ////knock down by 8px from the 40ps dense. "compact" setting like gmail
-    .list__tile--avatar
-      height: 48px
-    .list__tile__avatar
-      .icon, img
-        height: 38px
-        width: 38px
-        font-size: 20px
-    .list__tile__action
-        .icon
-          font-size: 20px
-
-//fix button
-.list__tile__action
-  .btn
-    padding 0
-    margin 0
-  .btn--icon
-    margin -8px
-
-//fix toolbar
-.toolbar > *:first-child
-  margin-left: 8px
-
-.toolbar > *:last-child
-    margin-right: 4px;

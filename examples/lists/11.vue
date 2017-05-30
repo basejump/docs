@@ -4,21 +4,21 @@
       <v-card>
         <v-toolbar class="teal white--text">
           <v-toolbar-side-icon light></v-toolbar-side-icon>
-          <v-toolbar-title>Dense Items Mash</v-toolbar-title>
+          <v-toolbar-title>Kitchen Sink Mash-Up</v-toolbar-title>
           <v-btn light icon>
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-toolbar>
 
         <v-list subheader>
-          <v-subheader>Normal Un-dense chat</v-subheader>
+          <v-subheader>Normal "un-dense" Chat</v-subheader>
           <v-list-item v-for="item in contacts" v-bind:key="item.title">
             <v-list-tile avatar>
               <v-list-tile-avatar>
                 <img v-bind:src="item.avatar"/>
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title v-html="item.title"></v-list-tile-title>
+                {{item.title}}
               </v-list-tile-content>
               <v-list-tile-action>
                 <v-btn v-if="item.active" dark ripple small style="min-width:40px">
@@ -120,7 +120,7 @@
           </v-list-group>
         </v-list>
 
-        <v-list dense subheader>
+        <v-list dense two-line>
           <v-subheader>Notifications</v-subheader>
 
           <v-list-item>
@@ -130,6 +130,7 @@
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>Notifications 40px high</v-list-tile-title>
+                <v-list-tile-sub-title>will be 13 px across board on dense</v-list-tile-sub-title>
               </v-list-tile-content>
             </v-list-tile>
           </v-list-item>
@@ -225,3 +226,12 @@
     }
   }
 </script>
+
+<style lang="stylus">
+//fix toolbar
+.toolbar > *:first-child
+  margin-left: 8px
+
+.toolbar > *:last-child
+    margin-right: 4px;
+</style>
