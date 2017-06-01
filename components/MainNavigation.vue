@@ -36,7 +36,7 @@
             v-btn(icon light v-on:click.native.stop="mini = !mini")
               v-icon chevron_left
     v-divider
-    v-list(dense)
+    v-list
       template(v-for="item in items")
         v-list-group(v-if="item.items" v-bind:group="item.group")
           v-list-tile(slot="item" ripple)

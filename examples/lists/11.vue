@@ -11,6 +11,29 @@
         </v-toolbar>
 
         <v-list subheader>
+          <v-subheader>Simple</v-subheader>
+          <v-list-item >
+            <v-list-tile>Foo</v-list-tile>
+          </v-list-item>
+          <v-list-item>
+            <v-list-tile>Bar</v-list-tile>
+          </v-list-item>
+        </v-list>
+
+        <v-divider></v-divider>
+
+        <v-list dense>
+          <v-subheader>Simple Dense</v-subheader>
+          <v-list-item >
+            <v-list-tile class='list__tile--active'>Foo Active</v-list-tile>
+          </v-list-item>
+          <v-list-item>
+            <v-list-tile>Bar</v-list-tile>
+          </v-list-item>
+        </v-list>
+
+        <v-divider></v-divider>
+        <v-list subheader>
           <v-subheader>Normal "un-dense" Chat</v-subheader>
           <v-list-item v-for="item in contacts" v-bind:key="item.title">
             <v-list-tile avatar>
