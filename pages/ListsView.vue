@@ -24,7 +24,8 @@
             { header: 'Card image with toolbar and list', file: 'lists/7', desc: `A list can be combined with a card.` },
             { header: 'Title with sub-title, actions and action-text', file: 'lists/8', desc: `A list can contain a stack within an action. Ripple and router props can be passed through the main v-list, to the v-list-tile or as a property in the items array.` },
             { header: 'Action with title and sub-title', file: 'lists/9', desc: `A list can contain up to 3 lines.` },
-            { header: 'Expansion Lists', file: 'lists/10', desc: `A list can contain a group of items which will display on click. Expansion lists are also used within the <code>sidebar</code> component.` }
+            { header: 'Expansion Lists', file: 'lists/10', desc: `A list can contain a group of items which will display on click. Expansion lists are also used within the <code>sidebar</code> component.` },
+            { header: 'Kitchen Sink Example', file: 'lists/11', desc: `A list can be <code>dense</code> which lowers the line height and font size per material.io specs. Shows an example of what is theoretically possible with everything lining up properly` }
           ],
           props: {
             'v-list': {
