@@ -5,7 +5,7 @@
         <v-toolbar class="teal white--text">
           <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>Kitchen Sink Mash-Up</v-toolbar-title>
-          <v-btn light icon>
+          <v-btn light icon class="menu">
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-toolbar>
@@ -256,5 +256,8 @@
   margin-left: 8px
 
 .toolbar > *:last-child
-    margin-right: 4px;
+  margin-right: 10px
+
+.toolbar > .menu:last-child
+  margin-right: 4px;
 </style>
